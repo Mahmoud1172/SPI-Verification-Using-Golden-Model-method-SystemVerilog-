@@ -1,0 +1,36 @@
+module ram (din,clk,rst_n,rx_valid,dout,tx_valid);
+	parameter MEM_DEPTH = 256;
+	parameter ADDR_SIZE = 8;
+
+	input [9:0] din;
+	input clk, rst_n , rx_valid;
+	output reg [7:0] dout;
+	output reg tx_valid;
+`pragma protect begin_protected
+`pragma protect version = 1
+`pragma protect encrypt_agent = "Model Technology", encrypt_agent_info = "10.2c"
+`pragma protect data_method = "aes128-cbc"
+`pragma protect key_keyowner = "Mentor Graphics Corporation" , key_keyname = "MGC-VERIF-SIM-RSA-1" , key_method = "rsa"
+`pragma protect encoding = (enctype = "base64", line_length = 64, bytes = 128), key_block
+Ob33POgz/jhKszVdnsHVKaIs8+5j5Ak6pwdvIRxlON424kIfGOgCj+kO9HnzvVs1
+NfK5UTD2lcH+UNgvS2ENMswGcnzfJlolPFatLmRMB8O8Cdvlhfpi8OEoj/zZMuHS
+5aYVjOjhlTzAkF+4B2HZF5LPvn4UyIvCy+dDb//lVBQ=
+`pragma protect encoding = (enctype = "base64", line_length = 64, bytes = 784), data_block
+PPs7wDpBjhdTiohuGLWYEv1O2rJD1vx2HjHSLoJdwTeCLlCsDanoO5J7kjJShFFX
+FRUGz6Qv6QBFHposmYL2zLTq1D+9Pc8CPJhKKo3teB+GwfzJaXpHEHkPUuctr00L
+00K7qyKkurTJu8IEcmx32ZYpycurUC5Fm8bb7GmuscOuW56peiTrEE21SYOdORZx
+cgA+i64pvwwgSVyNUwEQSIfSdDzfLSbju+NlTfEzU7OMNruy5RMJXsNbEM+FoVKI
+b4oChT2L77b0JP1DfTNOnJUEcdaCOSZhW5CngSdNPJQRQdrTSbhiKAJPgApR4rqD
+8jpkNd1wqwQVxKcdSZE4qeifBpbgYbGqD2IccomAvN2FbQ84IqG2GDoBfHlPCd2T
+4oQuhsTSJBitn9JNIf3jDefb6z3/WoKc6rR3SvgEQK8o/d6ZDNn8ZYRRVi9z65fG
+upDC/jtfzG8i1Hau6acS8kYBmLpNIGm4DDaiKIbFhtoshx7C7s1Cg8lotBw15SRM
+Iaf8+L5KrXo9JccCa56OJp8rVayj3uscaudNRvJmlSr3H+U//ggQYMxPkqz4OULk
+4Ekvx/fO5v6zN9Jgx5JHpboOnN3gLkFILc6dJnKlRLWSxHDdiUa0C+NHBm/uu5OV
+2DSSsdNRZPMfXCnxz3bH/APJe5vCKUiHRoWv5BHwKF+yWgk3i2cA+kjSW1s5HVOB
+4o/P3PVHJ6YKAGwH9JxwRmW8NAxXiY/MhDXzTooLEBGTZXCGJ5X6qTUaTadmIOq5
+LBXU9WmNjuWiWFNyWNh3QVu5uyszH8mr8AR8rU9/HikI/e/mRWmucP8NBbC2Ye64
+/XBj2gPKes8Hp69Iuh8C9Tl0NB6ZpAhBBN5KDoCRSf2PwC2Qa8Txf7kXMdySdF9j
+o3NAfBNKEjkUAHetMOpCcLCWUV39ak4qtNwWKfpbeMNdPf57fzhB69X55q47I9X1
+Utxi8mdkqFt7qEJWILL+tGWuYDg14n/E5NaT5JqRtm+rENWhjD/o+uIoBBGHLayf
+FDEnQgIBdwEZuE7EahpW+A==
+`pragma protect end_protected

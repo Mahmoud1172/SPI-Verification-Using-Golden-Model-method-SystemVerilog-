@@ -1,0 +1,8 @@
+vlib work
+vlog  ram.vp ramtb.sv +cover -covercells
+vsim -voptargs=+acc work.ramtb -cover
+add wave * 
+coverage save ramtb.ucdb -onexit
+run -all
+#quit -sim
+vcover report ramtb.ucdb -details -annotate -all

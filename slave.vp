@@ -1,0 +1,67 @@
+module slave(MOSI,SS_n,clk,rst_n,tx_valid,tx_data,rx_data,rx_valid,MISO);
+
+	input MOSI,SS_n,clk,rst_n,tx_valid;
+	input [7:0] tx_data;
+	output reg [9:0] rx_data;
+	output reg rx_valid;
+	output reg MISO;
+`pragma protect begin_protected
+`pragma protect version = 1
+`pragma protect encrypt_agent = "Model Technology", encrypt_agent_info = "10.2c"
+`pragma protect data_method = "aes128-cbc"
+`pragma protect key_keyowner = "Mentor Graphics Corporation" , key_keyname = "MGC-VERIF-SIM-RSA-1" , key_method = "rsa"
+`pragma protect encoding = (enctype = "base64", line_length = 64, bytes = 128), key_block
+lZfS2NQ4/7hQe2CA6siwxJYfDoOUjXr22ZX78YGLW6yD58INLP9r7nJrK8xll9hb
+UvI4EdMe+WWxbAYY7FWWoZ4t4NzGzpPUUQWF0v5tT4M5e80BvKaqKpUYS/HR6hP9
+Odvpks8rx4ItLFl+h2BCmJ1rJVA/85SuOb58P5jSt7U=
+`pragma protect encoding = (enctype = "base64", line_length = 64, bytes = 2320), data_block
+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
+AXBaM2jEqI0YFlWfZuBe1A==
+`pragma protect end_protected
